@@ -1,0 +1,16 @@
+# Robots.txt for TechnoLogic Hungary Kft.
+# https://technologic.hu
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://technologic.hu/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
