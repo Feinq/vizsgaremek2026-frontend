@@ -37,6 +37,7 @@ export function DisclaimerBanner() {
 				<div className="bg-slate-900 border border-slate-700 rounded-xl sm:rounded-2xl shadow-2xl shadow-black/20 p-4 sm:p-6">
 					{/* Close button - absolute positioned on mobile */}
 					<button
+						onClick={() => setIsVisible(false)}
 						className="absolute top-6 right-6 sm:hidden p-3 text-slate-400 cursor-pointer hover:text-white hover:bg-slate-800 rounded-lg transition-colors"
 						aria-label="Bezárás"
 					>
@@ -73,6 +74,7 @@ export function DisclaimerBanner() {
 								Megértettem
 							</button>
 							<button
+								onClick={() => setIsVisible(false)}
 								className="hidden sm:flex p-2 text-slate-400 cursor-pointer hover:text-white hover:bg-slate-800 rounded-lg transition-colors"
 								aria-label="Bezárás"
 							>
