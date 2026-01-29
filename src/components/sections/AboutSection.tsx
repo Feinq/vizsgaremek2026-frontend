@@ -38,15 +38,15 @@ export function AboutSection() {
 
 						<div className="prose prose-invert prose-lg text-slate-300/80 mb-10">
 							<p>
-								A {COMPANY_INFO.name} {COMPANY_INFO.foundedYear}-ban alakult
+								Az {COMPANY_INFO.name} {COMPANY_INFO.foundedYear}-ban alakult
 								Budapesten, azzal a céllal, hogy megbízható IT partnere legyen a
 								hazai és nemzetközi vállalatoknak.
 							</p>
 							<p>
 								Ma már három telephelyen, több mint 50 szakemberrel dolgozunk
 								azon, hogy ügyfeleink mindig a legmodernebb és legbiztonságosabb
-								IT megoldásokat kapják. ISO 27001 tanúsítványunk garantálja az
-								információbiztonság legmagasabb szintjét.
+								IT megoldásokat kapják. ISO 27001 és ISO 9001 tanúsítványaink garantálják az
+								információbiztonság és minőségirányítás legmagasabb szintjét.
 							</p>
 						</div>
 

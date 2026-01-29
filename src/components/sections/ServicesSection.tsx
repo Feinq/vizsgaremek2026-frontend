@@ -11,17 +11,17 @@ function ServiceCard({ service }: ServiceCardProps) {
 	const Icon = service.icon;
 
 	return (
-		<article className="group relative bg-white rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl border border-slate-100 overflow-hidden">
-			{/* Top gradient line */}
+		<article className="group relative bg-white rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl border border-slate-200 overflow-hidden">
+			{/* Top gradient line on hover */}
 			<div
-				className={`absolute top-0 left-0 w-full h-1 bg-linear-to-br ${service.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`}
+				className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-blue-600 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
 				aria-hidden="true"
 			/>
 
 			{/* Icon */}
-			<div className="w-14 h-14 bg-slate-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-50 transition-colors duration-300">
+			<div className="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-50 transition-colors duration-300">
 				<Icon
-					className="w-7 h-7 text-slate-600 group-hover:text-blue-600 transition-colors duration-300"
+					className="w-7 h-7 text-slate-700 group-hover:text-blue-600 transition-colors duration-300"
 					aria-hidden="true"
 				/>
 			</div>
@@ -55,14 +55,9 @@ export function ServicesSection() {
 	return (
 		<section
 			id="services"
-			className="py-32 bg-slate-50 relative"
+			className="py-32 bg-white relative"
 			aria-labelledby="services-heading"
 		>
-			<div
-				className="absolute top-0 left-0 w-full h-px bg-linear-to-br from-transparent via-slate-200 to-transparent"
-				aria-hidden="true"
-			/>
-
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<SectionHeader
 					badge="Szolgáltatásaink"

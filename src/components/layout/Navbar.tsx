@@ -21,7 +21,7 @@ export function Navbar() {
 				'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b',
 				scrolled
 					? 'bg-white/90 backdrop-blur-md border-slate-200 shadow-sm'
-					: 'bg-transparent border-transparent py-2',
+					: 'bg-transparent border-transparent',
 			)}
 			role="navigation"
 			aria-label="Fő navigáció"
@@ -37,12 +37,7 @@ export function Navbar() {
 						<div className="w-10 h-10 bg-linear-to-br from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all duration-300">
 							<Network className="w-6 h-6 text-white" aria-hidden="true" />
 						</div>
-						<span
-							className={cn(
-								'text-xl font-bold tracking-tight',
-								scrolled ? 'text-slate-900' : 'text-white',
-							)}
-						>
+						<span className="text-xl font-bold tracking-tight text-slate-900">
 							{COMPANY_INFO.shortName}
 						</span>
 					</button>
@@ -53,19 +48,14 @@ export function Navbar() {
 							<button
 								key={item.id}
 								onClick={() => handleNavClick(item.id)}
-								className={cn(
-									'text-sm font-medium cursor-pointer transition-all hover:-translate-y-0.5',
-									scrolled
-										? 'text-slate-600 hover:text-blue-600'
-										: 'text-white/80 hover:text-white',
-								)}
+								className="text-sm font-medium cursor-pointer transition-all hover:-translate-y-0.5 text-slate-600 hover:text-blue-600"
 							>
 								{item.label}
 							</button>
 						))}
 						<Button
 							onClick={() => handleNavClick('contact')}
-							variant={scrolled ? 'primary' : 'secondary'}
+							variant="primary"
 							size="md"
 						>
 							Ajánlatkérés
@@ -74,7 +64,7 @@ export function Navbar() {
 
 					{/* Mobile Menu Button */}
 					<button
-						className="md:hidden p-2 rounded-lg cursor-pointer hover:bg-white/10 transition-colors"
+						className="md:hidden p-2 rounded-lg cursor-pointer hover:bg-slate-100 transition-colors"
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 						aria-expanded={isMenuOpen}
 						aria-controls="mobile-menu"
@@ -82,12 +72,12 @@ export function Navbar() {
 					>
 						{isMenuOpen ? (
 							<X
-								className={cn(scrolled ? 'text-slate-800' : 'text-white')}
+								className="text-slate-800"
 								aria-hidden="true"
 							/>
 						) : (
 							<Menu
-								className={cn(scrolled ? 'text-slate-800' : 'text-white')}
+								className="text-slate-800"
 								aria-hidden="true"
 							/>
 						)}

@@ -10,16 +10,15 @@ import {
 	Award,
 	Globe,
 	Cpu,
-	Lock,
 } from 'lucide-react';
 import type { Service, Location, Stat, TimelineItem, Badge, ContactInfo, NavItem } from '../types';
 
 export const COMPANY_INFO = {
-	name: 'TechnoLogic Hungary Kft.',
-	shortName: 'TechnoLogic',
+	name: 'Inframax Hungary Kft.',
+	shortName: 'Inframax',
 	foundedYear: 2018,
 	phone: '+36 1 234 5678',
-	email: 'info@technologic.hu',
+	email: 'info@inframax.hu',
 	address: '1117 Budapest, Infopark sétány 1.',
 	workingHours: 'Hétfő - Péntek: 9:00 - 17:00',
 } as const;
@@ -32,10 +31,10 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const STATS: Stat[] = [
-	{ value: '7+', label: 'Év tapasztalat' },
-	{ value: '50+', label: 'Szakember' },
-	{ value: '3', label: 'Telephely' },
 	{ value: '200+', label: 'Sikeres projekt' },
+	{ value: '50+', label: 'Szakember' },
+	{ value: '7+', label: 'Év tapasztalat' },
+	{ value: '99.9%', label: 'Rendelkezésre állás' },
 ];
 
 export const SERVICES: Service[] = [
@@ -123,13 +122,13 @@ export const TIMELINE: TimelineItem[] = [
 	{ year: '2018', event: 'Cégalapítás Budapesten' },
 	{ year: '2021', event: 'Debreceni telephely megnyitása' },
 	{ year: '2023', event: 'Miskolci telephely megnyitása' },
-	{ year: '2024', event: 'ISO 27001 tanúsítvány megszerzése' },
+	{ year: '2024', event: 'ISO 27001 & ISO 9001 tanúsítványok megszerzése' },
 ];
 
 export const BADGES: Badge[] = [
-	{ icon: Award, label: 'ISO 27001', desc: 'Tanúsított cég' },
+	{ icon: Award, label: 'ISO 27001', desc: 'Információbiztonság' },
+	{ icon: Award, label: 'ISO 9001', desc: 'Minőségirányítás' },
 	{ icon: Users, label: '50+', desc: 'Szakember' },
-	{ icon: Lock, label: 'GDPR', desc: 'Megfelelőség' },
 	{ icon: Globe, label: '24/7', desc: 'Támogatás' },
 ];
 
