@@ -92,7 +92,7 @@ export function HeroSection() {
 
 				{/* Stats */}
 				<div
-					className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 md:pt-20 border-t border-white/5"
+					className="grid grid-cols-2 md:grid-cols-4 gap-8 py-4 lg:py-20 border-t border-white/5"
 					role="list"
 					aria-label="Statisztikák"
 				>

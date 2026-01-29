@@ -59,7 +59,7 @@ export function AboutSection() {
 							{TIMELINE.map((item, index) => (
 								<div key={index} className="relative mb-8 last:mb-0 group" role="listitem">
 									<div
-										className="absolute -left-9.75 top-1 h-5 w-5 rounded-full border-4 border-slate-900 bg-slate-700 group-hover:bg-cyan-400 group-hover:scale-110 transition-all duration-300 shadow-[0_0_0_4px_rgba(15,23,42,1)]"
+										className="absolute -left-10.75 top-1 h-5 w-5 rounded-full border-4 border-slate-900 bg-slate-700 group-hover:bg-cyan-400 group-hover:scale-110 transition-all duration-300 shadow-[0_0_0_4px_rgba(15,23,42,1)]"
 										aria-hidden="true"
 									/>
 									<div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
