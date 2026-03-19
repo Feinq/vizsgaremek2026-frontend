@@ -48,7 +48,7 @@ export function HeroSection() {
 
 					{/* Description */}
 					<p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto mb-10">
-						Az Inframax Hungary Kft. több mint 25 éve nyújt professzionális IT
+						Az TechnoLogic Hungary Kft. több mint 25 éve nyújt professzionális IT
 						szolgáltatásokat magyar vállalatoknak. Felhőmegoldások, kiberbiztonság
 						és egyedi szoftverfejlesztés egy kézből.
 					</p>

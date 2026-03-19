@@ -14,11 +14,11 @@ import {
 import type { Service, Location, Stat, TimelineItem, Badge, ContactInfo, NavItem } from '../types';
 
 export const COMPANY_INFO = {
-	name: 'Inframax Hungary Kft.',
-	shortName: 'Inframax',
+	name: 'TechnoLogic Hungary Kft.',
+	shortName: 'TechnoLogic',
 	foundedYear: 2018,
 	phone: '+36 1 234 5678',
-	email: 'info@inframax.hu',
+	email: 'info@tlogic.hu',
 	address: '1117 Budapest, Infopark sétány 1.',
 	workingHours: 'Hétfő - Péntek: 9:00 - 17:00',
 } as const;

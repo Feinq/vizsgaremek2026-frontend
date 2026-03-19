@@ -60,7 +60,7 @@ export function DisclaimerBanner() {
 							</div>
 							<p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
 								Ez a weboldal kizárólag <span className="text-slate-900 font-medium">bemutatási és oktatási célokat</span> szolgál.
-								Az Inframax Hungary Kft. egy fiktív cég, az itt szereplő adatok,
+								Az TechnoLogic Hungary Kft. egy fiktív cég, az itt szereplő adatok,
 								elérhetőségek és szolgáltatások nem valósak.
 							</p>
 						</div>
